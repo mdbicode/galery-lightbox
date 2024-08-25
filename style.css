@@ -1,0 +1,45 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #292929;
+}
+
+.container{
+    margin: 3rem auto;
+    background-color: #9c9999;
+    padding: 0.7rem;
+}
+
+.highlight, .highlight img{
+    margin: auto;
+    width: 455px;
+    height: 300px;
+    margin-bottom: 0.7rem;
+}
+
+.gallery{
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    row-gap: 3px;
+    column-gap: 3px;
+    width: max-content;
+}
+.gallery .item{
+    width: 150px;
+    height: 150px;
+}
+.gallery .item img{
+    width: 150px;
+    height: 150px;
+}
+.gallery .item img:hover{
+    cursor: pointer;
+    opacity: 0.7;
+    border: 0.1px solid #9c9999;    
+}
+.active{
+    opacity: 0.7 !important;
+}
